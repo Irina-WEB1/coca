@@ -1,9 +1,9 @@
 import '../assets/scss/main.scss';
 
-// component
+// components
 import { useTheme } from './components/theme.js';
 import { useBurger } from './components/burger.js';
-import { useInsightSlider, useTestimonialsSlider } from './components/slider.js';
+import { useInsightSlider, useTestimonialsSlider } from './components/home/slider';
 
 useTheme();
 useBurger();
