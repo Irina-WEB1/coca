@@ -1,0 +1,123 @@
+.everything {
+  &__container {
+    border-bottom: 1px solid var(--neutral-color-30);
+    padding: 105px 0 165px;
+  }
+
+  &__title {
+    margin-bottom: 118px;
+    max-width: 930px;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 120%;
+    letter-spacing: -0.04em;
+    color: var(--neutral-color-100);
+  }
+
+  &__subtitle {
+    margin-right: 174px;
+    margin-bottom: 135px;
+  }
+
+  .text-p-subtitle::before {
+    width: 620px;
+    transform: translateY(-83px);
+  }
+
+  &__right-img {
+    width: 162px;
+    height: 162px;
+  }
+
+  &__left-right {
+    @include flex-justify-between;
+  }
+
+  &__slider {
+    position: relative;
+    overflow: visible;
+  }
+
+  &__swiper-wrapper {
+    align-items: flex-start;
+  }
+
+  &__process {
+    height: auto;
+    max-width: 502px;
+
+    &__img-first {
+      height: 629px;
+      object-fit: cover;
+    }
+
+    &__img-second {
+      margin-bottom: 24px;
+      height: 370px;
+      object-fit: cover;
+    }
+
+    &__img-third {
+      margin-bottom: 174px;
+      height: 460px;
+      object-fit: cover;
+    }
+  }
+
+  &__img-first,
+  &__img-first,
+  &__img-first {
+    display: block;
+  }
+
+  &__slider-btns {
+    @include flex-all-center;
+    position: absolute;
+    top: 95px;
+    left: 42%;
+    z-index: var(--z-index-2);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    transform: translateX(-50%);
+    cursor: pointer;
+
+    path {
+      stroke: var(--neutral-color-100);
+    }
+  }
+
+  &__slide-title {
+    margin-bottom: 8px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: var(--neutral-color-100);
+  }
+
+  &__slide-desc {
+    margin-bottom: 32px;
+    font-weight: 500;
+    line-height: 178%;
+    color: var(--neutral-color-150);
+  }
+
+  &__btn {
+    padding: 16px 34px;
+    color: var(--neutral-color-10);
+    background-color: var(--neutral-color-100);
+  }
+
+  // &__img-third {
+  // max-height: 460px;
+  // }
+  // &__btn {
+  //   width: 175px;
+  //   height: 56px;
+  //   color: var(--neutral-color-10);
+  //   background-color: var(--neutral-color-100);
+  //   padding-block: 16px;
+  //   padding-inline: 32px;
+  // }
+}
