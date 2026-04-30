@@ -13,7 +13,14 @@ export const useEverythingSlider = () => {
       nextEl: '.everything__slider-btns',
     },
     breakpoints: {
+      320: {
+        centeredSlides: true,
+      },
+      600: {
+        centeredSlides: false,
+      },
       993: {
+        slidesPerView: 'auto',
         centeredSlides: false,
       },
     },
