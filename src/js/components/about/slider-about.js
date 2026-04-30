@@ -26,3 +26,21 @@ export const useEverythingSlider = () => {
     },
   });
 };
+
+export const useMeetSlider = () => {
+  new Swiper('.meet__slider', {
+    modules: [Navigation],
+    slidesPerView: 'auto',
+    spaceBetween: 32,
+    loop: true,
+    centeredSlides: false,
+    navigation: {
+      nextEl: '.meet__slider-btns',
+    },
+    breakpoints: {
+      993: {
+        centeredSlides: false,
+      },
+    },
+  });
+};

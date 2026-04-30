@@ -26,6 +26,8 @@
   --logo-color-text: #101010;
   --logo-color-circle: #101010;
 
+
+
   // bg colors
   --black-bg-color: #1d1e25;
 
@@ -59,6 +61,7 @@
 [data-theme='dark'] {
   // neutral colors
   --neutral-color-10: #1d1e25;
+  --neutral-color-90: #fff;
   --neutral-color-100: #fff;
   --neutral-color-140: #fff;
 
@@ -71,4 +74,5 @@
 
   // overview colors
   --black-bg-color: #18181d;
+
 }
