@@ -58,6 +58,21 @@
     @include mini-desktop {
       margin-bottom: 74px;
     }
+   
+    @include tablet {
+      margin-bottom: 44px;
+      font-size: 60px;
+    }
+
+    @include mobile {
+      margin-bottom: 38px;
+      font-size: 48px;
+    }
+
+    @include small-mobile {
+      margin-bottom: 30px;
+      font-size: 38px;
+    }
   }
 
   &__subtitle {
@@ -123,6 +138,7 @@
     max-width: 502px;
 
     @include tablet {
+      height: auto;
       max-width: 425px;
     }
   }
