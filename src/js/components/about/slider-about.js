@@ -17,7 +17,7 @@ export const useEverythingSlider = () => {
         centeredSlides: true,
       },
       600: {
-        centeredSlides: false,
+        centeredSlides: true,
       },
       993: {
         slidesPerView: 'auto',
@@ -38,6 +38,15 @@ export const useMeetSlider = () => {
       nextEl: '.meet__slider-btns',
     },
     breakpoints: {
+      300: {
+        centeredSlides: true,
+      },
+      600: {
+        slidesPerView: 3,
+      },
+      900: {
+        centeredSlides: true,
+      },
       993: {
         centeredSlides: false,
       },
