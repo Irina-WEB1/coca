@@ -26,3 +26,26 @@ export const useActivitySlider = () => {
     },
   });
 };
+
+export const useArticlesSlider = () => {
+  new Swiper('.articles__slider', {
+    modules: [Navigation],
+    slidesPerView: 'auto',
+    spaceBetween: 32,
+    loop: true,
+    navigation: {
+      prevEl: '.articles__btn--prev',
+      nextEl: '.articles__btn--next',
+    },
+    // breakpoints: {
+    //   320: {
+    //     slidesPerView: 1,
+    //     centeredSlides: true,
+    //   },
+    //   580: {
+    //     slidesPerView: 'auto',
+    //   }
+    // }
+  });
+};
+
