@@ -1,0 +1,1 @@
+import{n as e,t}from"./burger-D20921xX.js";e(),t();
