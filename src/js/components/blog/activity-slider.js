@@ -37,15 +37,6 @@ export const useArticlesSlider = () => {
       prevEl: '.articles__btn--prev',
       nextEl: '.articles__btn--next',
     },
-    // breakpoints: {
-    //   320: {
-    //     slidesPerView: 1,
-    //     centeredSlides: true,
-    //   },
-    //   580: {
-    //     slidesPerView: 'auto',
-    //   }
-    // }
   });
 };
 

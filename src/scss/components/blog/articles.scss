@@ -9,17 +9,16 @@
     @include flex-all-between;
     margin-bottom: 80px;
 
-     @include mobile {
-        @include flex-column-all-center;
-        gap: 50px;
-        margin-bottom: 50px;
+    @include mobile {
+      @include flex-column-all-center;
+      gap: 50px;
+      margin-bottom: 50px;
     }
-    
   }
 
   &__top-left {
     @include mobile {
-        @include flex-column-all-center;
+      @include flex-column-all-center;
     }
   }
 
@@ -37,9 +36,9 @@
     line-height: 178%;
     color: var(--neutral-color-150);
 
-     @include mobile {
-        text-align: center;
-     }
+    @include mobile {
+      text-align: center;
+    }
   }
 
   &__btns {
@@ -82,7 +81,15 @@
   }
 
   &__article {
+    padding-bottom: 40px;
     max-width: 406px;
+    
+  }
+
+  &__slide-desc {
+    @include small-mobile {
+      @include flex-column-all-center;
+    }
   }
 
   &__article-img {
@@ -119,6 +126,4 @@
       background-color: var(--neutral-color-150);
     }
   }
-
-
 }

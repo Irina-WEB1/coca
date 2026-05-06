@@ -42,7 +42,7 @@ export const useMeetSlider = () => {
         centeredSlides: true,
       },
       600: {
-        slidesPerView: 3,
+        slidesPerView: 'auto',
       },
       900: {
         centeredSlides: true,

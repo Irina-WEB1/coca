@@ -101,8 +101,9 @@
     }
 
     @include small-mobile {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+      display: grid;
+      gap: 20px 0;
+      grid-template-columns: 1fr 1fr;
     }
   }
 
@@ -114,12 +115,12 @@
     padding-inline: 14px;
 
     @include mobile {
-        text-align: center;
+      text-align: center;
     }
 
-     @include small-mobile {
-        // text-align: center;
-     }
+    @include small-mobile {
+      // text-align: center;
+    }
   }
 
   &__link {
@@ -210,5 +211,11 @@
     font-size: 20px;
     line-height: 150%;
     color: var(--neutral-color-150);
+  }
+}
+
+.text-p-subtitle {
+  &::before {
+    transform: translateY(-60px);
   }
 }

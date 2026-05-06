@@ -47,6 +47,10 @@
     @include small-tablet {
       padding: 70px 0;
     }
+
+    @include mobile {
+      padding: 50px 0;
+    }
   }
 
   &__two {
@@ -56,8 +60,12 @@
   &__left {
     margin-right: 52px;
 
-     @include mini-desktop {
+    @include mini-desktop {
       @include flex-column-all-center;
+    }
+
+    @include mobile {
+      margin-right: 0;
     }
   }
 
@@ -98,6 +106,7 @@
       max-width: 670px;
       font-size: 25px;
     }
+
   }
 
   &__right {
@@ -114,6 +123,7 @@
   }
 
   &__right-img {
+    border-radius: 50%;
     width: 100%;
     height: 100%;
   }
@@ -222,5 +232,11 @@
     padding: 16px 34px;
     color: var(--neutral-color-10);
     background-color: var(--neutral-color-100);
+  }
+}
+
+.text-p-subtitle {
+  &::before {
+    transform: translateY(-83px);
   }
 }

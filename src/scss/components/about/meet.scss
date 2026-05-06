@@ -66,6 +66,10 @@
     @include mini-desktop {
       text-align: center;
     }
+
+    @include mobile {
+      margin-bottom: 50px;
+    }
   }
 
   &__slider {
@@ -74,6 +78,10 @@
 
     @include small-tablet {
       margin-bottom: 70px;
+    }
+
+    @include mobile {
+      margin-bottom: 50px;
     }
   }
 
@@ -144,15 +152,15 @@
     gap: 8px;
   }
 
-  &__social-link {
-    & svg path {
-      fill: var(--neutral-color-90);
+ &__social-link {
+    & svg {
+      & path {
+        fill: var(--neutral-color-160);
+      }
     }
 
-    &:hover {
-      & path {
-        fill: var(--success-color-70);
-      }
+    & svg:hover path {
+      fill: var(--neutral-color-150);
     }
   }
 
