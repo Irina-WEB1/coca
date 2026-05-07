@@ -129,7 +129,7 @@
 
     &--popular {
       border: 1px solid var(--primary-color-60);
-      background-color: var(--neutral-color-90);
+      background-color: var(--black-bg-color);
       transform: translateY(-76px);
 
       @include tablet {
@@ -137,6 +137,27 @@
         transform: inherit;
       }
     }
+  }
+
+  &__item-top {
+    &--popular {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  }
+
+  &__best {
+    border-radius: 100px;
+    width: 118px;
+    height: 32px;
+    font-weight: 500;
+    line-height: 143%;
+    text-align: center;
+    color: #fff;
+    background-color: #1463ff;
+    padding-block: 6px;
+    padding-inline: 12px;
   }
 
   &__plans {
@@ -204,7 +225,7 @@
         color: var(--neutral-color-100);
 
         &--popular {
-          color: #fff;
+          color: var(--neutral-color-10);
         }
       }
     }
